@@ -1,6 +1,8 @@
 set background=dark encoding=utf-8 ignorecase hlsearch incsearch nocompatible
-colorscheme base16-solarized
+set laststatus=2
 syntax on
+let base16colorspace=256
+colorscheme base16-solarized
 
 " Vundle
 filetype off
@@ -13,8 +15,12 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'mattn/calendar-vim'
 Plugin 'vimwiki/vimwiki'
 Plugin 'davidoc/taskpaper.vim'
+Plugin 'bling/vim-airline'
 call vundle#end()
 filetype plugin indent on
+
+set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline:h14
+let g:airline_powerline_fonts = 1
 
 inoremap jk <ESC>
 au BufRead,BufNewFile *.md set filetype=markdown
