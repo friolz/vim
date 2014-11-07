@@ -44,7 +44,7 @@ nnoremap <leader>s :set spell!<enter>
 nnoremap <leader>m :MarkedOpen
 nnoremap <leader>c :Calendar<CR>
 nnoremap <leader>u :PluginUpdate<CR>
-nnoremap <C-j> :bnext<CR>
-nnoremap <C-k> :bprevious<CR>
+nnoremap <C-l> :bnext<CR>
+nnoremap <C-h> :bprevious<CR>
 nnoremap <leader>e :e ~/.vimrc<CR>
 nnoremap <leader>t :e ~/Dropbox/Todo/todo.taskpaper<CR>
