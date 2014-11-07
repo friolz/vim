@@ -16,11 +16,14 @@ Plugin 'mattn/calendar-vim'
 Plugin 'vimwiki/vimwiki'
 Plugin 'davidoc/taskpaper.vim'
 Plugin 'bling/vim-airline'
+Plugin 'bling/vim-bufferline'
 call vundle#end()
 filetype plugin indent on
 
 set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline:h14
 let g:airline_powerline_fonts = 1
+
+let g:bufferline_echo = 0
 
 inoremap jk <ESC>
 au BufRead,BufNewFile *.md set filetype=markdown
@@ -41,5 +44,7 @@ nnoremap <leader>s :set spell!<enter>
 nnoremap <leader>m :MarkedOpen
 nnoremap <leader>c :Calendar<CR>
 nnoremap <leader>u :PluginUpdate<CR>
+nnoremap <C-j> :bnext<CR>
+nnoremap <C-k> :bprevious<CR>
 nnoremap <leader>e :e ~/.vimrc<CR>
 nnoremap <leader>t :e ~/Dropbox/Todo/todo.taskpaper<CR>
