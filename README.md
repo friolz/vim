@@ -7,3 +7,5 @@
 - CtrlP
 - calendar
 - vimwiki
+- airline
+- bufferline
