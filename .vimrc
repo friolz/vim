@@ -1,5 +1,4 @@
-set background=dark encoding=utf-8 ignorecase hlsearch incsearch nocompatible
-set laststatus=2
+set background=dark encoding=utf-8 ignorecase hlsearch incsearch nocompatible laststatus=2 noshowmode
 syntax on
 let base16colorspace=256
 colorscheme base16-solarized
