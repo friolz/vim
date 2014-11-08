@@ -4,7 +4,6 @@ syntax on
 let base16colorspace=256
 colorscheme base16-solarized
 
-" Vundle
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -24,6 +23,8 @@ set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline:h14
 let g:airline_powerline_fonts = 1
 
 let g:bufferline_echo = 0
+let g:bufferline_modified = '*'
+let g:bufferline_show_bufnr = 0
 
 inoremap jk <ESC>
 au BufRead,BufNewFile *.md set filetype=markdown
@@ -46,5 +47,6 @@ nnoremap <leader>c :Calendar<CR>
 nnoremap <leader>u :PluginUpdate<CR>
 nnoremap <C-l> :bnext<CR>
 nnoremap <C-h> :bprevious<CR>
+nnoremap <leader>x :bd<CR>
 nnoremap <leader>e :e ~/.vimrc<CR>
 nnoremap <leader>t :e ~/Dropbox/Todo/todo.taskpaper<CR>
