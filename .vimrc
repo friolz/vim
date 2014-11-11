@@ -26,8 +26,8 @@ let g:bufferline_show_bufnr = 0
 
 inoremap jk <ESC>
 au BufRead,BufNewFile *.md set filetype=markdown
-au BufNewFile,BufRead,BufEnter   *.md      setlocal spell    spelllang=de_de
-au BufNewFile,BufRead,BufEnter   *.txt     setlocal spell    spelllang=de_de
+"au BufNewFile,BufRead,BufEnter   *.md      setlocal spell    spelllang=de_de
+"au BufNewFile,BufRead,BufEnter   *.txt     setlocal spell    spelllang=de_de
 let mapleader = ","
 let g:calendar_weeknm = 3 "KW01
 let g:ctrlp_cmd = 'CtrlP'
