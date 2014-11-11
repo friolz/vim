@@ -1,4 +1,4 @@
-set background=dark encoding=utf-8 ignorecase hlsearch incsearch nocompatible laststatus=2 noshowmode
+set background=dark encoding=utf-8 ignorecase hlsearch incsearch nocompatible laststatus=2 noshowmode number
 syntax on
 let base16colorspace=256
 colorscheme base16-solarized
@@ -9,7 +9,6 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'itspriddle/vim-marked'
 Plugin 'danielmiessler/VimBlog'
-Plugin 'kien/ctrlp.vim'
 Plugin 'mattn/calendar-vim'
 Plugin 'vimwiki/vimwiki'
 Plugin 'davidoc/taskpaper.vim'
@@ -32,18 +31,20 @@ au BufNewFile,BufRead,BufEnter   *.txt     setlocal spell    spelllang=de_de
 let mapleader = ","
 let g:calendar_weeknm = 3 "KW01
 let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_use_caching = 1
 let g:vimwiki_list = [{'path': '~/vimwiki/Systembetreuer.wiki'},
-		    \ {'path': '~/vimwiki/Datenschutzbeauftragter.wiki'},
-		    \ {'path': '~/vimwiki/Schule.wiki'},
-		    \ {'path': '~/vimwiki/Privat.wiki'},
-		    \ {'path': '~/vimwiki/Computer.wiki'}]
+			\ {'path': '~/vimwiki/Datenschutzbeauftragter.wiki'},
+			\ {'path': '~/vimwiki/Schule.wiki'},
+			\ {'path': '~/vimwiki/Privat.wiki'},
+			\ {'path': '~/vimwiki/Computer.wiki'}]
 nnoremap <leader>b :BlogSave publish
-nnoremap <leader>u yypVr=
+nnoremap <leader>l yypVr=
 nnoremap <leader>d A<CR><CR>---<CR><CR>
 nnoremap <leader>s :set spell!<enter>
-nnoremap <leader>m :MarkedOpen
+nnoremap <leader>m :MarkedOpen<CR>
 nnoremap <leader>c :Calendar<CR>
 nnoremap <leader>u :PluginUpdate<CR>
+nnoremap <leader>n :e ~/scratchpad.md<CR>
 nnoremap <C-l> :bnext<CR>
 nnoremap <C-h> :bprevious<CR>
 nnoremap <leader>x :bd<CR>
