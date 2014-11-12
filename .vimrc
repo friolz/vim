@@ -46,6 +46,7 @@ nnoremap <leader>m :MarkedOpen<CR>
 nnoremap <leader>c :Calendar<CR>
 nnoremap <leader>u :PluginUpdate<CR>
 nnoremap <leader>n :e ~/scratchpad.md<CR>
+nnoremap <leader>r ggVGg?g?
 nnoremap <C-l> :bnext<CR>
 nnoremap <C-h> :bprevious<CR>
 nnoremap <leader>x :bd<CR>
