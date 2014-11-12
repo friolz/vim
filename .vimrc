@@ -37,7 +37,8 @@ let g:vimwiki_list = [{'path': '~/vimwiki/Systembetreuer.wiki'},
 			\ {'path': '~/vimwiki/Schule.wiki'},
 			\ {'path': '~/vimwiki/Privat.wiki'},
 			\ {'path': '~/vimwiki/Computer.wiki'}]
-nnoremap <leader>b :BlogSave publish
+nnoremap <leader>p :BlogSave publish
+nnoremap <leader>b :BlogSwitch<CR>
 nnoremap <leader>l yypVr=
 nnoremap <leader>d A<CR><CR>---<CR><CR>
 nnoremap <leader>s :set spell!<enter>
