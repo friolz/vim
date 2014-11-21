@@ -1,4 +1,4 @@
-set background=dark encoding=utf-8 ignorecase hlsearch incsearch nocompatible laststatus=2 noshowmode number
+set background=dark encoding=utf-8 ignorecase hlsearch incsearch nocompatible laststatus=2 noshowmode number textwidth=79
 syntax on
 let base16colorspace=256
 colorscheme base16-solarized
@@ -14,6 +14,7 @@ Plugin 'vimwiki/vimwiki'
 Plugin 'davidoc/taskpaper.vim'
 Plugin 'bling/vim-airline'
 Plugin 'bling/vim-bufferline'
+Plugin 'tpope/vim-surround'
 call vundle#end()
 filetype plugin indent on
 
@@ -23,6 +24,8 @@ let g:airline_powerline_fonts = 1
 let g:bufferline_echo = 0
 let g:bufferline_modified = '*'
 let g:bufferline_show_bufnr = 0
+
+let g:task_paper_follow_move = 0
 
 inoremap jk <ESC>
 au BufRead,BufNewFile *.md set filetype=markdown
