@@ -1,4 +1,4 @@
-set background=dark encoding=utf-8 ignorecase hlsearch incsearch nocompatible laststatus=2 noshowmode number textwidth=79
+set background=dark encoding=utf-8 ignorecase hlsearch incsearch nocompatible cursorline laststatus=2 noshowmode number textwidth=79 so=999
 syntax on
 let base16colorspace=256
 colorscheme base16-default
@@ -15,6 +15,8 @@ Plugin 'davidoc/taskpaper.vim'
 Plugin 'bling/vim-airline'
 Plugin 'bling/vim-bufferline'
 Plugin 'lervag/vim-latex'
+Plugin 'edkolev/tmuxline.vim'
+Plugin 'tpope/vim-surround'
 call vundle#end()
 filetype plugin indent on
 
@@ -27,12 +29,13 @@ let g:bufferline_show_bufnr = 0
 
 let g:task_paper_follow_move = 0
 
-let g:latex_viewer = 'open -ga /Applications/Preview.app'
+let g:latex_viewer = 'open -ga /Applications/Skim.app'
 
+let g:tmuxline_powerline_separators = 1
 inoremap jk <ESC>
 au BufRead,BufNewFile *.md set filetype=markdown
-"au BufNewFile,BufRead,BufEnter   *.md      setlocal spell    spelllang=de_de
-"au BufNewFile,BufRead,BufEnter   *.txt     setlocal spell    spelllang=de_de
+au BufNewFile,BufRead,BufEnter   *.md      setlocal spell    spelllang=de_de
+au BufNewFile,BufRead,BufEnter   *.txt     setlocal spell    spelllang=de_de
 au BufNewFile,BufRead,BufEnter	*.tex	setlocal spell	spelllang=de_de
 let mapleader = ","
 let maplocalleader = ","
