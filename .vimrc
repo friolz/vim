@@ -29,7 +29,7 @@ let g:bufferline_show_bufnr = 0
 
 let g:task_paper_follow_move = 0
 
-let g:latex_viewer = 'open -ga /Applications/Skim.app'
+let g:latex_viewer = 'open -ga /Applications/Preview.app'
 
 let g:tmuxline_powerline_separators = 1
 inoremap jk <ESC>
@@ -62,3 +62,4 @@ nnoremap <C-h> :bprevious<CR>
 nnoremap <leader>x :bd<CR>
 nnoremap <leader>e :e ~/.vimrc<CR>
 nnoremap <leader>t :e ~/Dropbox/Todo/todo.taskpaper<CR>
+nnoremap <leader>y "=strftime("%d.%m.%Y")<CR>P
