@@ -1,7 +1,7 @@
 set background=dark encoding=utf-8 ignorecase hlsearch incsearch nocompatible cursorline laststatus=2 noshowmode number textwidth=79 so=999
 syntax on
-let base16colorspace=256
-colorscheme base16-solarized
+"let base16colorspace=256
+colorscheme solarized
 
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -13,6 +13,7 @@ Plugin 'mattn/calendar-vim'
 Plugin 'bling/vim-airline'
 Plugin 'bling/vim-bufferline'
 Plugin 'lervag/vim-latex'
+Plugin 'altercation/vim-colors-solarized'
 call vundle#end()
 filetype plugin indent on
 
