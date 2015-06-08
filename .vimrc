@@ -34,8 +34,16 @@ au BufRead,BufNewFile *.md set filetype=markdown
 au BufNewFile,BufRead,BufEnter   *.md      setlocal spell    spelllang=de_de
 au BufNewFile,BufRead,BufEnter   *.txt     setlocal spell    spelllang=de_de
 au BufNewFile,BufRead,BufEnter	*.tex	setlocal spell	spelllang=de_de
-let mapleader = ","
-let maplocalleader = ","
+"let mapleader = ","
+let mapleader = "\<Space>"
+nnoremap <Leader>w :w<CR>
+vmap <Leader>y "+y
+vmap <Leader>d "+d
+nmap <Leader>p "+p
+nmap <Leader>P "+P
+vmap <Leader>p "+p
+vmap <Leader>P "+P
+nmap <Leader><Leader> V
 let g:calendar_weeknm = 3 "KW01
 nnoremap <leader>p :BlogSave publish
 nnoremap <leader>b :BlogSwitch<CR>
