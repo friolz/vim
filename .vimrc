@@ -1,6 +1,7 @@
 set background=dark encoding=utf-8 ignorecase hlsearch incsearch nocompatible cursorline laststatus=2 noshowmode number textwidth=79 so=999
 syntax on
-colorscheme solarized
+let base16colorspace=256
+colorscheme base16-solarized
 
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
