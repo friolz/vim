@@ -13,7 +13,6 @@ Plugin 'mattn/calendar-vim'
 Plugin 'bling/vim-airline'
 Plugin 'bling/vim-bufferline'
 Plugin 'lervag/vim-latex'
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'kien/ctrlp.vim'
 call vundle#end()
 filetype plugin indent on
